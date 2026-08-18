@@ -137,7 +137,7 @@ export default function EventVisionStudio() {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/event-concept",
+  "/api/event-concept",
       {
         method: "POST",
         headers: {
