@@ -12079,7 +12079,15 @@ h2 em {
   .intro-card .image-frame {
     width: 100%;
   }
+.intro-card {
+    margin-bottom: 0;
+  }
 
+  .intro-card .stat-card {
+    margin-top: -150px;
+    position: relative;
+    z-index: 5;
+  }
   /* Avoid large desktop-style visual effects on a small GPU
      while preserving the animation itself. */
   .hero-glow {
