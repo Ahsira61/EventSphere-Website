@@ -12089,7 +12089,7 @@ h2 em {
   .intro-card .image-frame {
     position: relative;
     width: 100%;
-    height: 560px;
+    height: 470px;
     overflow: hidden;
     margin-bottom: 0;
   }
@@ -12103,13 +12103,13 @@ h2 em {
     transform-origin: center center;
   }
 
-  .intro-card .floating-stat {
+.intro-card .floating-stat {
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   width: 150px;
-  height: 115px;
+  height: 95px;
   margin: 0;
   z-index: 10;
 }
