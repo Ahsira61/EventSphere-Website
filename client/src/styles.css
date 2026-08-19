@@ -12056,13 +12056,15 @@ h2 em {
     background-image: none !important;
   }
 
-  .hero-bg-image {
-    object-position: 62% center;
-  }
+.hero-bg-image {
+  object-position: 62% top;
+}
 
   .hero-content {
-    width: 100%;
-  }
+  width: 100%;
+  padding-left: 18px;
+  padding-right: 18px;
+}
 
   /* Keep the mobile image/card proportions clean. */
   .intro-card img,
