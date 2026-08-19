@@ -12075,27 +12075,27 @@ h2 em {
     max-width: 100%;
     object-fit: cover;
   }
-
-  .intro-card .image-frame {
-    width: 100%;
-  }
-  .intro-card .image-frame {
-  min-height: 500px;
+.intro-card {
+  display: flex;
+  flex-direction: column;
 }
 
-.intro-card .image-frame img {
-  height: 500px;
-  object-fit: cover;
+.intro-card .image-frame {
+  width: 100%;
+  margin-bottom: 0;
 }
+
+.intro-card .floating-stat {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  z-index: 5;
+}
+
 .intro-card {
     margin-bottom: 0;
   }
 
-  .intro-card .stat-card {
-    margin-top: -150px;
-    position: relative;
-    z-index: 5;
-  }
   /* Avoid large desktop-style visual effects on a small GPU
      while preserving the animation itself. */
   .hero-glow {
