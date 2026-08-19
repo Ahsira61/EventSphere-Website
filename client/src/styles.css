@@ -12112,6 +12112,7 @@ h2 em {
   height: 95px;
   margin: 0;
   z-index: 10;
+  text-align: center;
 }
 
   /* Avoid large desktop-style visual effects on a small GPU
