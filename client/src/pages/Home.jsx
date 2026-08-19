@@ -399,6 +399,7 @@ export default function Home() {
             <div className="image-frame">
 
               <img
+                className="intro-image"
                 src={corporate}
                 alt="Elegant EventSphere event"
                 fetchPriority="high"

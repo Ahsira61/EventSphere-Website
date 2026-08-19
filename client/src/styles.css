@@ -12199,3 +12199,23 @@ h2 em {
   height: 100%;
   object-fit: cover;
 }
+/* HOME — mobile only: show lower part of hero image */
+@media (max-width: 700px) {
+  .intro-card .image-frame {
+    height: 100% !important;
+    min-height: 540px !important;
+    overflow: hidden;
+  }
+
+  .intro-card .image-frame img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center bottom !important;
+  }
+
+  /* Small left space for Home starting text */
+  .intro-content {
+    padding-left: 18px !important;
+  }
+}
