@@ -12051,53 +12051,70 @@ h2 em {
 
   /* HOME: use the same hero composition, but keep the focal
      subject visible on narrow screens. */
+
   .hero {
     min-height: 100svh;
     background-image: none !important;
   }
 
-.hero-bg-image {
+  .hero-bg-image {
     object-position: 62% 0%;
     object-fit: cover;
     transform: scale(1.35);
     transform-origin: 62% 0%;
   }
+
   .hero-content {
-  width: 100%;
-  padding-left: 18px;
-  padding-right: 18px;
-}
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 
   /* Keep the mobile image/card proportions clean. */
+
   .intro-card img,
   .rounded-photo {
     width: 100%;
     max-width: 100%;
     object-fit: cover;
   }
-.intro-card {
-  display: flex;
-  flex-direction: column;
-}
 
-.intro-card .image-frame {
-  width: 100%;
-  margin-bottom: 0;
-}
+  /* MOBILE INTRO IMAGE + 500+ CARD */
 
-.intro-card .floating-stat {
-  width: 100%;
-  margin: 0;
-  position: relative;
-  z-index: 5;
-}
-
-.intro-card {
+  .intro-card {
+    position: relative;
     margin-bottom: 0;
+  }
+
+  .intro-card .image-frame {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  .intro-card .image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1.08);
+    transform-origin: center center;
+  }
+
+  .intro-card .floating-stat {
+    position: absolute;
+    left: 32px;
+    bottom: 0;
+    width: 320px;
+    margin: 0;
+    z-index: 10;
   }
 
   /* Avoid large desktop-style visual effects on a small GPU
      while preserving the animation itself. */
+
   .hero-glow {
     filter: blur(55px);
     opacity: 0.75;
@@ -12106,6 +12123,7 @@ h2 em {
   /* ABOUT: keep the animated logo/orbits centered and fully
      inside the phone viewport instead of feeling like a
      cropped desktop composition. */
+
   .about-hero {
     width: 100%;
     min-height: auto;
@@ -12141,11 +12159,13 @@ h2 em {
   }
 
   /* Prevent decorative words from causing horizontal overflow. */
+
   .floating-word {
     white-space: nowrap;
   }
 
   /* Stack content cleanly and keep readable spacing. */
+
   .split {
     gap: 36px;
   }
@@ -12164,12 +12184,13 @@ h2 em {
 
   /* Keep reveal animations smooth without changing their
      appearance or timing on desktop. */
+
   .reveal,
   [data-framer-motion] {
     backface-visibility: hidden;
   }
-}
 
+}
 @media (max-width: 380px) {
   .about-hero-visual {
     min-height: 305px;
