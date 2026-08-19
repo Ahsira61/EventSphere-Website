@@ -12058,10 +12058,10 @@ h2 em {
 
 .hero-bg-image {
     object-position: 62% 0%;
-    height: calc(100% - 150px);
     object-fit: cover;
+    transform: scale(1.35);
+    transform-origin: 62% 0%;
   }
-
   .hero-content {
   width: 100%;
   padding-left: 18px;
