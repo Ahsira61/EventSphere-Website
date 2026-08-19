@@ -12057,8 +12057,10 @@ h2 em {
   }
 
 .hero-bg-image {
-  object-position: 62% 0%;
-}
+    object-position: 62% 0%;
+    height: calc(100% - 150px);
+    object-fit: cover;
+  }
 
   .hero-content {
   width: 100%;
