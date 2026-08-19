@@ -401,7 +401,8 @@ export default function Home() {
               <img
                 src={corporate}
                 alt="Elegant EventSphere event"
-                loading="lazy"
+                fetchPriority="high"
+                loading="eager"
                 decoding="async"
               />
 
