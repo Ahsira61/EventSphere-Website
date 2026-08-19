@@ -178,12 +178,16 @@ export default function Home() {
       {/* =====================================================
           HERO
       ===================================================== */}
-      <section
-        className="hero"
-        style={{
-          backgroundImage: `url(${hero})`
-        }}
-      >
+      <section className="hero">
+        <img
+          className="hero-bg-image"
+          src={hero}
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          decoding="async"
+        />
+
         <div className="hero-overlay" />
 
         <div className="hero-glow hero-glow-one" />
@@ -397,6 +401,8 @@ export default function Home() {
               <img
                 src={corporate}
                 alt="Elegant EventSphere event"
+                loading="lazy"
+                decoding="async"
               />
 
               <div className="image-shine" />
@@ -456,6 +462,8 @@ export default function Home() {
                       <img
                         src={service.image}
                         alt={service.name}
+                        loading="lazy"
+                        decoding="async"
                       />
 
                       <div className="service-image-overlay" />
@@ -577,6 +585,8 @@ export default function Home() {
               <img
                 src={wedding}
                 alt="Elegant wedding event"
+                loading="lazy"
+                decoding="async"
               />
 
               <div className="mosaic-overlay" />
@@ -594,6 +604,8 @@ export default function Home() {
               <img
                 src={conference}
                 alt="Corporate conference"
+                loading="lazy"
+                decoding="async"
               />
 
               <div className="mosaic-overlay" />
@@ -611,6 +623,8 @@ export default function Home() {
               <img
                 src={privateImg}
                 alt="Private celebration"
+                loading="lazy"
+                decoding="async"
               />
 
               <div className="mosaic-overlay" />
@@ -628,6 +642,8 @@ export default function Home() {
               <img
                 src={theme}
                 alt="Creative theme event"
+                loading="lazy"
+                decoding="async"
               />
 
               <div className="mosaic-overlay" />

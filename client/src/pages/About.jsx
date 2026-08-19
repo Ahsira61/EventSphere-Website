@@ -82,7 +82,12 @@ export default function About() {
 
             <div className="hero-logo-core">
               <div className="logo-aura"></div>
-              <img src={logo} alt="EventSphere" />
+              <img
+                src={logo}
+                alt="EventSphere"
+                fetchPriority="high"
+                decoding="async"
+              />
               <Sparkles className="hero-sparkle" size={20} />
             </div>
           </Reveal>
@@ -98,6 +103,8 @@ export default function About() {
                 className="rounded-photo"
                 src={corporate}
                 alt="EventSphere professional event"
+                loading="lazy"
+                decoding="async"
               />
               <div className="image-badge">
                 <span>EVENTSPHERE</span>
