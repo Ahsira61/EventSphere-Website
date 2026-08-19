@@ -12079,6 +12079,14 @@ h2 em {
   .intro-card .image-frame {
     width: 100%;
   }
+  .intro-card .image-frame {
+  min-height: 500px;
+}
+
+.intro-card .image-frame img {
+  height: 500px;
+  object-fit: cover;
+}
 .intro-card {
     margin-bottom: 0;
   }
